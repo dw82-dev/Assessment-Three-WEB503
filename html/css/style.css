@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+  html {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
   body {
     margin: 0;
     font-family: Arial;
@@ -35,4 +40,9 @@
   .navbar a:hover {
     background-color: #ddd;
     color: black;
+  }
+
+  .header {
+    flex: 100%;
+    max-width: 100%;
   }
