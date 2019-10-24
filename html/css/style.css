@@ -45,4 +45,12 @@
   .header {
     flex: 100%;
     max-width: 100%;
+    position: relative;
+    color: #ddd;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
   }
