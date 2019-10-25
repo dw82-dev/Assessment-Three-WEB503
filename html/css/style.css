@@ -90,6 +90,7 @@
 
    .home-column img {
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
    }
 
    .text-left {
@@ -113,6 +114,17 @@
    .text-right h1 {
     line-height: 8px;
     color: white;
+}
+
+.home-main {
+    flex: 100%;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
 
    .card {
@@ -145,6 +157,7 @@
     background-color: #333;
     border-radius: 15px;
     margin-top: 20px;
+    padding: 1px;
   }
 
     /* Responsive layout - makes a two column-layout instead of four columns */
