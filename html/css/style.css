@@ -81,6 +81,40 @@
     padding: 12px;
    }
 
+   .home-column {
+    position: relative;
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 30px;
+   }
+
+   .home-column img {
+    border-radius: 10px;
+   }
+
+   .text-left {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+   }
+
+   .text-left h1 {
+    line-height: 8px;
+    color: white;
+   }
+
+   .text-right {
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+    text-align: right;
+   }
+
+   .text-right h1 {
+    line-height: 8px;
+    color: white;
+}
+
    .card {
     position: relative;
     background-color: rgba(255, 255, 255);
@@ -126,6 +160,10 @@
     .column {
       flex: 100%;
       max-width: 100%;
+    }
+    .home-column {
+        flex: 100%;
+        max-width: 100%;
     }
     .navbar {
       flex-direction: column;
