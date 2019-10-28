@@ -277,7 +277,18 @@ body {
   height: 100%;
 }
 
+.contact-links {
+  font-size: 40px;
+  text-align: center;
+}
 
+.contact-links a {
+  color: black;
+}
+
+.contact-links a:hover {
+  color: #00ff59;
+}
 
 input {
   width: 100%;
