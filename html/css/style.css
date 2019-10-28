@@ -169,7 +169,6 @@ body {
   flex: 25%;
   max-width: 25%;
   padding: 12px;
-  padding-top: 6%;
 }
 
 .about-side img {
@@ -178,11 +177,15 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
+#about-img {
+  margin-bottom: 30px;
+}
+
 .about-main {
   flex: 50%;
   max-width: 50%;
   padding: 12px;
-  text-align: center;
+  text-align: left;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   margin-bottom: 25px;
@@ -213,6 +216,12 @@ body {
   transition: 1s;
 }
 
+.blog-card:hover img {
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .blog-image {
   flex: 30%;
   max-width: 30%;
@@ -239,7 +248,7 @@ body {
 .blog-button {
   background-color: #00ff59;
   border: none;
-  color: black;
+  color:black;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -344,6 +353,9 @@ input[type="submit"]:hover {
   .about-main {
     flex: 100%;
     max-width: 100%;
+  }
+  #about-img {
+    display: none;
   }
   .blog-main {
     flex: 100%;
