@@ -256,9 +256,14 @@ body {
   transition: 1s;
 }
 
-.about-column {
+.contact-column {
   flex: 33.33%;
   max-width: 33.33%;
+  padding: 12px;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255);
   padding: 12px;
 }
 
