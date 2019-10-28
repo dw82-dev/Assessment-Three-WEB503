@@ -201,6 +201,34 @@ body {
   padding: 12px;
 }
 
+.blog-card {
+  display: flex;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.blog-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+  transition: 1s;
+}
+
+.blog-image {
+  flex: 30%;
+  max-width: 30%;
+  height: 100%;
+  padding: 12px;
+}
+
+.blog-image img {
+    border-radius: 10px;
+}
+
+.blog-text {
+  flex: 70%;
+  max-width: 70%;
+  padding: 12px;
+}
+
 .footer {
   flex: 100%;
   max-width: 100%;
