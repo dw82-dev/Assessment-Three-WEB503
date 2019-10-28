@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148588261-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-148588261-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact</title>
@@ -51,18 +59,19 @@
                 <div class="contact-card">
                     <h3>Ask a Question</h3>
                     <h5 style="color:grey">HOW CAN WE HELP YOU?</h5>
-                    <form action="contact-form.php">
+                    <form target="_blank" action="contact-form.php" method="post">
                         Email:<br>
                         <input type="email" name="Email">
                         <br>
                         Subject:<br>
                         <input type="text" name="Subject">
                         <br><br>
-                        <textarea name="message" rows="10" cols="30">Your message here.</textarea>
+                        <textarea name="message" rows="10" cols="30" placeholder="Your message here."></textarea>
                         <br><br>
                         <input type="submit">
-                        </form>
-                        
+                        <br>
+                    </form>
+                    <br>
                 </div>
             </div>
         </div>

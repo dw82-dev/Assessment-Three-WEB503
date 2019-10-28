@@ -267,6 +267,34 @@ body {
   padding: 12px;
 }
 
+input {
+  width: 100%;
+  height: 35px;
+  padding: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  background-color: #00ff59;
+  border: none;
+  color: black;
+  padding: 16px
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+  color: white;
+  transition: 1s;
+}
+
 .footer {
   flex: 100%;
   max-width: 100%;
