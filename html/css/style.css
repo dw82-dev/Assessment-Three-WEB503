@@ -161,17 +161,21 @@ body {
   padding: 2px 16px;
 }
 
+#about-row {
+  display: flex;
+}
+
 .about-side {
   flex: 25%;
   max-width: 25%;
   padding: 12px;
-  height: 100%;
+  padding-top: 6%;
 }
 
 .about-side img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    vertical-align: middle;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .about-main {
@@ -218,5 +222,13 @@ body {
   }
   #home-hidden {
     display: none;
+  }
+  .about-side {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .about-main {
+    flex: 100%;
+    max-width: 100%;
   }
 }
