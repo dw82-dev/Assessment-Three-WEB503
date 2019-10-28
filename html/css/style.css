@@ -189,6 +189,18 @@ body {
   margin-top: 15px;
 }
 
+.blog-main {
+  flex: 75%;
+  max-width: 75%;
+  padding: 12px;
+}
+
+.blog-side {
+  flex: 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
 .footer {
   flex: 100%;
   max-width: 100%;
