@@ -189,10 +189,6 @@ body {
   margin-top: 15px;
 }
 
-#blog-header {
-  margin-bottom: 0px;
-}
-
 .blog-main {
   flex: 75%;
   max-width: 75%;
@@ -209,7 +205,7 @@ body {
   display: flex;
   background-color: rgba(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .blog-card:hover {
@@ -232,6 +228,31 @@ body {
   flex: 70%;
   max-width: 70%;
   padding: 12px;
+}
+
+.blog-content-bar {
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255);
+  padding: 12px;
+}
+
+.blog-button {
+  background-color: #00ff59;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.blog-button:hover {
+    background-color: #333;
+    color: white;
 }
 
 .footer {
