@@ -265,6 +265,7 @@ body {
 .contact-card {
   background-color: rgba(255, 255, 255);
   padding: 12px;
+  height: 100%;
 }
 
 input {
@@ -350,5 +351,9 @@ input[type="submit"]:hover {
   }
   .blog-side {
     display: none;
+  }
+  .contact-column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
