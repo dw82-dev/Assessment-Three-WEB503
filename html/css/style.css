@@ -127,7 +127,7 @@ body {
   margin-top: 15px;
 }
 
-.gallery-header {
+.full-header {
   flex: 100%;
   max-width: 100%;
   padding: 10px;
@@ -159,6 +159,30 @@ body {
 
 .container {
   padding: 2px 16px;
+}
+
+.about-side {
+  flex: 25%;
+  max-width: 25%;
+  padding: 12px;
+  height: 100%;
+}
+
+.about-side img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+}
+
+.about-main {
+  flex: 50%;
+  max-width: 50%;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .footer {
