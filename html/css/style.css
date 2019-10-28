@@ -284,6 +284,7 @@ body {
 
 .contact-links a {
   color: black;
+  padding: 12px;
 }
 
 .contact-links a:hover {
