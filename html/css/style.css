@@ -306,7 +306,7 @@ input[type="submit"] {
   background-color: #00ff59;
   border: none;
   color: black;
-  padding: 16px
+  padding: 10px;
   text-align: center;
   font-size: 16px;
   transition-duration: 0.4s;
@@ -331,6 +331,13 @@ input[type="submit"]:hover {
 
 /* Responsive layout - for smaller screens and tablets */
 @media (max-width: 800px) {
+  #home-hidden {
+    display: none;
+  }
+  .home-column {
+    flex: 50%;
+    max-width: 50%;
+  }
   .column {
     flex: 50%;
     max-width: 50%;
@@ -341,6 +348,17 @@ input[type="submit"]:hover {
   }
   .blog-side {
     display: none;
+  }
+  .about-side {
+    display: none;
+  }
+  .about-main {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .contact-column {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
@@ -361,6 +379,7 @@ input[type="submit"]:hover {
     display: none;
   }
   .about-side {
+    display: flex;
     flex: 100%;
     max-width: 100%;
   }
