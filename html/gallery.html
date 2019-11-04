@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- wrapper @ 95% width - conisten is all pages -->
+    <!-- wrapper @ 95% width - on all pages -->
     <div class=wrapper>
         <!-- flexbox navbar -->
         <div class="navbar">
@@ -179,43 +179,43 @@
 
                     <!-- Thumbnail image controls -->
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image1.jpg" width="100%" onclick="currentSlide(1)"
-                            alt="Typography on Paint">
+                        <img class="thumbs" src="images/gallery/thumbs/image1.jpg" width="100%"
+                            onclick="currentSlide(1)" alt="Typography on Paint">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image2.jpg" width="100%" onclick="currentSlide(2)"
-                            alt="The R">
+                        <img class="thumbs" src="images/gallery/thumbs/image2.jpg" width="100%"
+                            onclick="currentSlide(2)" alt="The R">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image3.jpg" width="100%" onclick="currentSlide(3)"
-                            alt="Typography on Leaves">
+                        <img class="thumbs" src="images/gallery/thumbs/image3.jpg" width="100%"
+                            onclick="currentSlide(3)" alt="Typography on Leaves">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image4.jpg" width="100%" onclick="currentSlide(4)"
-                            alt="The R Abstract">
+                        <img class="thumbs" src="images/gallery/thumbs/image4.jpg" width="100%"
+                            onclick="currentSlide(4)" alt="The R Abstract">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image5.jpg" width="100%" onclick="currentSlide(5)"
-                            alt="Typography Mashup">
+                        <img class="thumbs" src="images/gallery/thumbs/image5.jpg" width="100%"
+                            onclick="currentSlide(5)" alt="Typography Mashup">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image6.jpg" width="100%" onclick="currentSlide(6)"
-                            alt="Typography in the Rain">
+                        <img class="thumbs" src="images/gallery/thumbs/image6.jpg" width="100%"
+                            onclick="currentSlide(6)" alt="Typography in the Rain">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image7.jpg" width="100%" onclick="currentSlide(7)"
-                            alt="Typography Layers">
+                        <img class="thumbs" src="images/gallery/thumbs/image7.jpg" width="100%"
+                            onclick="currentSlide(7)" alt="Typography Layers">
                     </div>
 
                     <div class="modal-column">
-                        <img class="thumbs" src="images/gallery/thumbs/image8.jpg" width="100%" onclick="currentSlide(8)"
-                            alt="Typography and Water">
+                        <img class="thumbs" src="images/gallery/thumbs/image8.jpg" width="100%"
+                            onclick="currentSlide(8)" alt="Typography and Water">
                     </div>
 
                 </div>
@@ -228,43 +228,43 @@
 
     <!-- java script for modal -->
     <script>
-            function openModal() {
-              document.getElementById("myModal").style.display = "block";
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("thumbs");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            
-            function closeModal() {
-              document.getElementById("myModal").style.display = "none";
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("thumbs");
-              var captionText = document.getElementById("caption");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-            </script>
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 
 </body>
 

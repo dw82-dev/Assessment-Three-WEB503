@@ -159,10 +159,6 @@ body {
   padding: 2px 16px;
 }
 
-#about-row {
-  display: flex;
-}
-
 .about-side {
   flex: 25%;
   max-width: 25%;
