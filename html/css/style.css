@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* background image for all pages */
 html {
   background: url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -15,6 +16,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* standard wrapper all pages */
 .wrapper {
   flex: 95%;
   max-width: 95%;
@@ -45,11 +47,13 @@ body {
   transition: 1s;
 }
 
+/* active colour change on current page navbar */
 #active {
   background-color: #00ff59;
   border-radius: 10px;
 }
 
+/* standard header for all sub pages */
 .header {
   flex: 100%;
   max-width: 100%;
@@ -57,12 +61,14 @@ body {
   color: #ddd;
 }
 
+
 .title {
   position: absolute;
   bottom: 5%;
   left: 10%;
 }
 
+/* standard flexbox row for all pages */
 .row {
   display: flex;
   justify-content: center;
@@ -75,12 +81,14 @@ body {
   display: table;
 }
 
+/* gallery column layout */
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 12px;
 }
 
+/* home column layout */
 .home-column {
   position: relative;
   flex: 33.33%;
@@ -88,11 +96,13 @@ body {
   padding: 30px;
 }
 
+/* image properties */
 .home-column img {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* title text on landing page */
 .text-left {
   position: absolute;
   bottom: 80px;
@@ -100,12 +110,14 @@ body {
   width: 100%;
 }
 
+/* title text on landing page */
 .text-left h1, .text-right h1 {
   line-height: 8px;
   color: white;
   font-size: 2vw;
 }
 
+/* title text on landing page */
 .text-right {
   position: absolute;
   bottom: 80px;
@@ -114,6 +126,7 @@ body {
   width: 100%;
 }
 
+/* customer column on landing page */
 .home-main {
   flex: 100%;
   max-width: 100%;
@@ -125,6 +138,7 @@ body {
   margin-top: 15px;
 }
 
+/* standard header layout for all sub pages */
 .full-header {
   flex: 100%;
   max-width: 100%;
@@ -136,6 +150,7 @@ body {
   margin-top: 15px;
 }
 
+/* gallery image cards */
 .card {
   position: relative;
   background-color: rgba(255, 255, 255);
@@ -155,10 +170,12 @@ body {
   cursor: pointer;
 }
 
+/* text for gallery image cards */
 .container {
   padding: 2px 16px;
 }
 
+/* custom column layout for about page */
 .about-side {
   flex: 25%;
   max-width: 25%;
@@ -175,6 +192,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* custom column layout for about page */
 .about-main {
   flex: 50%;
   max-width: 50%;
@@ -186,18 +204,21 @@ body {
   margin-top: 15px;
 }
 
+/* custom column layout for blog page */
 .blog-main {
   flex: 75%;
   max-width: 75%;
   padding: 12px;
 }
 
+/* custom column layout for blog page */
 .blog-side {
   flex: 25%;
   max-width: 25%;
   padding: 12px;
 }
 
+/* custom cards for blogs on blog page */
 .blog-card {
   display: flex;
   background-color: rgba(255, 255, 255);
@@ -226,19 +247,21 @@ body {
 .blog-image img {
   border-radius: 10px;
 }
-
+ /* text container for blog cards */
 .blog-text {
   flex: 70%;
   max-width: 70%;
   padding: 12px;
 }
 
+/* side card for quick link buttons on blog page */
 .blog-content-bar {
   margin-bottom: 30px;
   background-color: rgba(255, 255, 255);
   padding: 12px;
 }
 
+/* buttons on blog page */
 .blog-button {
   background-color: #00ff59;
   border: none;
@@ -259,18 +282,21 @@ body {
   transition: 1s;
 }
 
+/* custom column layout for contact page */
 .contact-column {
   flex: 33.33%;
   max-width: 33.33%;
   padding: 12px;
 }
 
+/* contact page cards for contact info */
 .contact-card {
   background-color: rgba(255, 255, 255);
   padding: 12px;
   height: 100%;
 }
 
+/* contact links webfonts container */
 .contact-links {
   font-size: 40px;
   text-align: center;
@@ -285,6 +311,7 @@ body {
   color: #00ff59;
 }
 
+/* ask a question form */
 input {
   width: 100%;
   height: 35px;
@@ -313,6 +340,7 @@ input[type="submit"]:hover {
   transition: 1s;
 }
 
+/* standard footer for all pages */
 .footer {
   flex: 100%;
   max-width: 100%;
