@@ -28,7 +28,7 @@
 }
 
 .overlay-text {
-  width: 80%;
+  flex: 80%;
   max-width: 80%;
   background-color: #ffffff;
   margin-left: 40px;
@@ -54,14 +54,13 @@
 }
 
 .overlay-image {
-  width: 20%;
+  flex: 20%;
   max-width: 20%;
 }
 
 @media (max-width: 800px) {
   .overlay-image {
-    display: block;
-    max-height: none;
+    display: none;
   }
   .overlay-text {
     flex: 100%;
