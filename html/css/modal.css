@@ -40,7 +40,7 @@
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #00ff59;
   text-decoration: none;
   cursor: pointer;
 }
@@ -55,6 +55,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -104,19 +108,10 @@
   color: white;
 }
 
-img.thumbs {
+.thumbs {
   opacity: 0.6;
 }
 
-.active,
-.thumbs:hover {
+.active, .thumbs:hover {
   opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
